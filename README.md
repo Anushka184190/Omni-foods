@@ -1,2 +1,2 @@
 # Omni-foods
-Omni Food is a user-friendly food ordering website offering affordable pricing plans, exclusive memberships, glowing testimonials, and numerous customer benefits, ensuring a delightful culinary experience.
+Welcome to Omni Food, your ultimate destination for hassle-free food ordering. With our diverse range of culinary options, we offer flexible pricing plans and exclusive memberships tailored to suit your preferences. Our satisfied customers rave about their experiences, as seen in our glowing testimonials. Enjoy the convenience of easy online ordering, timely deliveries, and a plethora of benefits designed to enhance your dining experience. Join Omni Food today and savor the delights of seamless food delivery at your fingertips.
