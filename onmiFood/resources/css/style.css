@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: white;
+  color: #343434;
+  font-family: "Lato", "Arial", "Sans-Serif";
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility; /* letter spacing A and V vali++*/
+}
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg); /*opacity, film ->single element*/
+  height: 100vh;
+  background-position: center;
+  background-size: cover; /*cover the entire screen */
+}
+.header-text {
+  position: absolute; /* positioned realted to its div*/
+  top: 50%;
+  left: 50%;
+  width: 1140px;
+  transform: translate(-50%, -50%); /* adjusting along the axis of the screen */
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+h1 {
+  color: white;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 10px;
+}
+.btn:link,
+.btn.visited,
+input[type="submit"] {
+  display: inline-block; /*given to inline elements to apply block properties */
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.2, border 0.2, color 0.2s; /*delay in aperance */
+}
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  margin-right: 10px;
+  color: #fff;
+  border: 1px solid #d5790a;
+  background-color: #d5790a;
+}
+.btn-border:link,
+.btn-border:visited {
+  color: #d5790a;
+  border: 1px solid #d5790a;
+}
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #a45e07;
+  color: #fff;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #a45e07;
+}
+.btn-border:hover,
+.btn-border:active {
+  border: 1px solid #a45e07;
+}
+.logo-white {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+}
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 50px;
+}
+.main-nav li {
+  color: #fff;
+  display: inline-block;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  transition: border-bottom 0.2s;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #d5790a;
+  padding: 8px 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+section {
+  padding: 80px 0;
+}
+h2:after {
+  height: 2px;
+  background-color: #d5790a;
+  content: ""; /*line break k liye content k sath*/
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.feature-text {
+  width: 70%;
+  margin-left: 15%;
+  line-height: 145%; /*line k beech ki height*/
+}
+.box {
+  padding: 1%;
+}
+.box p {
+  font-size: 90%;
+  text-align: justify;
+}
+.icon-big {
+  font-size: 350%;
+  color: #d5790a;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+.meals-showcase li {
+  width: 25%;
+  display: block;
+  float: left;
+}
+.meals-photo {
+  width: 100%;
+  margin: 0;
+  background-color: #000;
+  overflow: hidden; /*actual size s bhaar jaara hga toh uss content ko chupa dega*/
+}
+.meals-photo img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7; /*blur kr n l liye*/
+  transform: scale(1.15); /*scale bda di h img ki*/
+  transition: transform 0.5s;
+}
+.meals-photo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.section-meals {
+  padding: 0;
+}
+.phone-img {
+  width: 40%;
+}
+.app-img:link,
+.app-img:visited {
+  border: 0;
+}
+.app-img img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+.step-box:first-child {
+  text-align: right; /*inline element p hi kaam krta h*/
+  padding-right: 3%;
+  margin-top: 30px;
+}
+.step-box:last-child {
+  padding-left: 3%;
+  margin-top: 50px;
+}
+.work-steps div {
+  border: 1px solid #d5790a;
+  text-align: center;
+  font-size: 150%;
+  height: 50px;
+  padding: 5px;
+  width: 50px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.work-steps {
+  margin-bottom: 50px;
+}
+.work-steps:last-of-type {
+  margin-bottom: 100px;
+}
+.section-works {
+  background-color: #f5f5f5;
+}
+.clearfix {
+  zoom: 1;
+} /*100% content*/
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both; /*clear floats*/
+  height: 0;
+  visibility: hidden;
+} /*float s dikkat margin ki*/
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.city-features {
+  margin-bottom: 5px;
+}
+.icon-small {
+  color: #d5790a;
+  font-size: 120%;
+  margin-right: 5px;
+  vertical-align: middle; /*text k mid m */
+  display: inline-block;
+}
+a:link,
+a:visited {
+  color: #d5790a;
+  text-decoration: none;
+  border-bottom: 1px solid #d5790a;
+  padding-bottom: 1px;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+a:hover,
+a:active {
+  color: #343434;
+  border-bottom: 1px solid transparent; /*border gayab k liye*/
+}
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; /*fixed kr dia h content ko*/
+}
+blockquote:before {
+  content: "\201C";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+}
+blockquote {
+  padding: 2%;
+  line-height: 145%;
+  font-style: italic;
+  position: relative;
+}
+cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 90%;
+}
+cite img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.section-plans {
+  background-color: #f5f5f5;
+}
+.plan-box {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 5px 5px 5px #e2e2e2; /* x y blur color*/
+}
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.plan-per-month {
+  font-size: 300%;
+  color: #d5790a;
+  font-weight: 100;
+}
+.plan-per-month span {
+  /*span ek hi line m alag alag properties*/
+  font-size: 30%;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.plan-per-meal {
+  font-size: 80%;
+}
+.plan-box div ul {
+  list-style: none;
+}
+.plan-box ul li {
+  padding: 5px 0;
+}
+.plan-box div:last-child {
+  text-align: center;
+  border: 1px solid transparent;
+}
+.plan-box div:first-child {
+  background-color: #e9e9e9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid #c8c8c8;
+}
+textarea {
+  height: 100px;
+}
+*:focus {
+  outline: none;
+}
+footer {
+  background-color: #555555;
+  padding: 45px;
+}
+.footer-navs {
+  list-style: none;
+  float: left;
+}
+.social-navs {
+  list-style: none;
+  float: right;
+}
+.footer-navs li,
+.social-navs li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-navs li a:link,
+.footer-navs li a:visited,
+.social-navs li a:link,
+.social-navs li a:visited {
+  text-decoration: none;
+  color: #9b9b9b;
+  border: 0;
+}
+.footer-navs li a:hover,
+.footer-navs li a:active {
+  color: #e7e7e7;
+}
+.social-navs li a:link,
+.social-navs li a:visited {
+  font-size: 150%;
+}
+.ion-social-facebook:hover,
+.ion-social-facebook:active {
+  color: #3b5998;
+}
+.ion-social-twitter:hover,
+.ion-social-twitter:active {
+  color: #00acee;
+}
+.ion-social-googleplus:hover,
+.ion-social-googleplus:active {
+  color: #db4a39;
+}
+.ion-social-instagram:hover,
+.ion-social-instagram:active {
+  color: #405de6;
+}
+footer p {
+  color: #9b9b9b;
+  text-align: center;
+  margin-top: 20px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1px 1px #cbcbcb;
+  z-index: 999; /*vertical stacking ek k peeche ek img
+  highest priority 999*/
+}
+.sticky .main-nav {
+  color: #393939;
+  margin-top: 15px;
+}
+.sticky .main-nav li {
+  text-transform: uppercase;
+  color: #393939;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 18px 0;
+  color: #393939;
+  text-transform: uppercase;
+}
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+  padding: 18px 0;
+  color: #393939;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d5790a;
+}
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+.sticky .logo-black {
+  display: block;
+}
+.sticky .logo-white {
+  display: none;
+}
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+  opacity: 0; /*gyab*/
+  animation-duration: 1s;
+}
+.js--wp-4{
+  animation-duration: 1s;
+}
+.js--wp-1.animated,
+.js--wp-2.animated ,
+.js--wp-3.animated,
+{
+  /*dono same time p both r parents---> no space bta classses*/
+  opacity: 1;
+}
